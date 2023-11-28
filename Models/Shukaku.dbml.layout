@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 13.5" name="Shukaku">
+  <DataContextMoniker Name="/ShukakuDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1880207f-2d96-457c-bdc4-d4965a06fc79" absoluteBounds="9.75, 2, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/ShukakuDataContext/GeneralPromo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64036920-6921-450b-9799-09d3d0e99417" absoluteBounds="9.765, 2.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10dae799-959b-4e09-a420-73e28b345fff" absoluteBounds="3.75, 9, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/ShukakuDataContext/Menu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e06d0303-d212-4e18-9a0f-f5dc828df571" absoluteBounds="3.765, 9.46, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="14b85b53-fd05-4c26-ae4f-754966c6bc42" absoluteBounds="9.75, 7, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ShukakuDataContext/MenuRating" />
+      <nestedChildShapes>
+        <elementListCompartment Id="515f67b2-c95c-4bf1-ba6e-89046396a8b0" absoluteBounds="9.765, 7.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd111e4d-bc89-496e-a00d-2a753d4adf3b" absoluteBounds="6.5, 4, 2, 6.0015283203124987">
+      <DataClassMoniker Name="/ShukakuDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfa8b92d-1e1b-42c2-b5aa-f1ef50dfd24c" absoluteBounds="6.515, 4.46, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8fc21d5-1b26-418c-b6c0-970f44637f45" absoluteBounds="3.75, 0.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/ShukakuDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66a88565-696b-4dc6-b3e8-d11b13bc7e33" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64ad503f-d6fc-4f22-8a82-a9a1a8f40cac" absoluteBounds="3.5, 5.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ShukakuDataContext/Cart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23aa8a96-0436-40ee-8059-b4ac9ddf2a4a" absoluteBounds="3.515, 6.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bedd565f-5b48-4427-be58-f7b6c4fbe899" absoluteBounds="0.75, 5.75, 2, 2.5401025390625014">
+      <DataClassMoniker Name="/ShukakuDataContext/Branch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5cd5508-1375-4a42-8a7e-e1bb33910fd6" absoluteBounds="0.765, 6.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 9.50076416015625); (6.5 : 9.50076416015625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShukakuDataContext/Menu/Menu_Order" />
+      <nodes>
+        <classShapeMoniker Id="10dae799-959b-4e09-a420-73e28b345fff" />
+        <classShapeMoniker Id="fd111e4d-bc89-496e-a00d-2a753d4adf3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 2.3749995); (7.5 : 2.3749995); (7.5 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShukakuDataContext/User/User_Order" />
+      <nodes>
+        <classShapeMoniker Id="b8fc21d5-1b26-418c-b6c0-970f44637f45" />
+        <classShapeMoniker Id="fd111e4d-bc89-496e-a00d-2a753d4adf3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.625 : 9); (4.625 : 8.03049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShukakuDataContext/Menu/Menu_Cart" />
+      <nodes>
+        <classShapeMoniker Id="10dae799-959b-4e09-a420-73e28b345fff" />
+        <classShapeMoniker Id="64ad503f-d6fc-4f22-8a82-a9a1a8f40cac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.625 : 4.25160970052083); (4.625 : 5.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShukakuDataContext/User/User_Cart" />
+      <nodes>
+        <classShapeMoniker Id="b8fc21d5-1b26-418c-b6c0-970f44637f45" />
+        <classShapeMoniker Id="64ad503f-d6fc-4f22-8a82-a9a1a8f40cac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.19155110677083); (4.54166666666667 : 8.19155110677083 : JumpStart); (4.70833333333333 : 8.19155110677083 : JumpEnd); (6.5 : 8.19155110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShukakuDataContext/Branch/Branch_Order" />
+      <nodes>
+        <classShapeMoniker Id="bedd565f-5b48-4427-be58-f7b6c4fbe899" />
+        <classShapeMoniker Id="fd111e4d-bc89-496e-a00d-2a753d4adf3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.95274983723958); (3.5 : 6.95274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShukakuDataContext/Branch/Branch_Cart" />
+      <nodes>
+        <classShapeMoniker Id="bedd565f-5b48-4427-be58-f7b6c4fbe899" />
+        <classShapeMoniker Id="64ad503f-d6fc-4f22-8a82-a9a1a8f40cac" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
