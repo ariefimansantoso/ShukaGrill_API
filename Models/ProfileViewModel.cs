@@ -17,5 +17,10 @@ namespace ShukakuApi.Models
         public string Kecamatan { get; set; }
         public string Province { get; set; }
         public string LastName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Password { get; set; }
+        public string PasswordNew { get; set; }
+        public string PasswordConfirmation { get; set; }
+        public string HashedPassword { get; set; }
     }
 }
