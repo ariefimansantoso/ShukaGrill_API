@@ -172,25 +172,25 @@ namespace ShukakuApi.Repositories
                     profile.City = "";
 
                     // user is trying to change password
-                    if (updatedUser.PasswordNew != "")
-                    {
-                        if (updatedUser.PasswordNew != updatedUser.PasswordConfirmation)
-                        {
-                            return false;
-                        }
+                    //if (updatedUser.PasswordNew != "")
+                    //{
+                    //    if (updatedUser.PasswordNew != updatedUser.PasswordConfirmation)
+                    //    {
+                    //        return false;
+                    //    }
 
-                        profile.PasswordHashed = Helper.CreateHashedPassword(updatedUser.PasswordNew);
-                    }
+                    //    profile.PasswordHashed = Helper.CreateHashedPassword(updatedUser.PasswordNew);
+                    //}
 
                     _db.Users.InsertOnSubmit(profile);
                     _db.SubmitChanges();
                 }
                 else
                 {
-                    if (!Helper.CompareHashedPassword(profile.PasswordHashed, updatedUser.Password))
-                    {
-                        return false;
-                    }
+                    //if (!Helper.CompareHashedPassword(profile.PasswordHashed, updatedUser.Password))
+                    //{
+                    //    return false;
+                    //}
 
                     profile.Address = updatedUser.Address;
                     profile.FullName = updatedUser.FullName;
@@ -205,20 +205,20 @@ namespace ShukakuApi.Repositories
                     profile.City = "";
 
                     // user is trying to change password
-                    if (updatedUser.PasswordNew != "")
-                    {
-                        if (updatedUser.PasswordNew != updatedUser.PasswordConfirmation)
-                        {
-                            return false;
-                        }
+                    //if (updatedUser.PasswordNew != "")
+                    //{
+                    //    if (updatedUser.PasswordNew != updatedUser.PasswordConfirmation)
+                    //    {
+                    //        return false;
+                    //    }
 
-                        if (!Helper.CompareHashedPassword(profile.PasswordHashed, updatedUser.Password))
-                        {
-                            return false;
-                        }
+                    //    if (!Helper.CompareHashedPassword(profile.PasswordHashed, updatedUser.Password))
+                    //    {
+                    //        return false;
+                    //    }
 
-                        profile.PasswordHashed = Helper.CreateHashedPassword(updatedUser.PasswordNew);
-                    }
+                    //    profile.PasswordHashed = Helper.CreateHashedPassword(updatedUser.PasswordNew);
+                    //}
 
                     _db.SubmitChanges();
                 }
